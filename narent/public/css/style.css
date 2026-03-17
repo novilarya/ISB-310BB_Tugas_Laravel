@@ -1,0 +1,300 @@
+body {
+    font-family: 'Montserrat', sans-serif;
+    background-color: #c8ba92; 
+    color: #212529;
+    transition: background-color 0.3s ease, color 0.3s ease;
+}
+
+body.dark-mode {
+    background-color: #2c2616;
+    color: #f8f9fa;
+}
+
+body.dark-mode nav {
+    background-color: #1f1f1f; 
+}
+
+body.dark-mode .card {
+    background-color: rgba(0, 0, 0, 0.4); 
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .main-footer, 
+body.dark-mode .footer-bottom {
+    background-color: #1a1a1a; 
+}
+
+body.dark-mode .modal-content {
+    background-color: #1f1f1f;
+    color: #ffffff; 
+    border: 1px solid rgba(255, 255, 255, 0.2);
+}
+
+body.dark-mode .modal-header {
+    border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .modal-footer {
+    border-top: 1px solid rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .modal-title {
+    color: #ffffff !important;
+}
+
+body.dark-mode .list-group-item {
+    background-color: transparent;
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.1);
+}
+
+body.dark-mode .btn-close {
+    filter: invert(1) grayscale(100%) brightness(200%);
+}
+
+body:not(.dark-mode) .btn-primary {
+    background: #76663b !important;
+    border: none !important;
+}
+
+body.dark-mode .modal-body .text-muted {
+    color: #cbd5e0 !important; 
+}
+
+body.dark-mode .modal-body small {
+    color: #f8f9fa !important;
+}
+
+body.dark-mode .modal-body h6 {
+    color: #ffffff !important;
+}
+
+body.dark-mode #sewaModal .modal-content,
+body.dark-mode #wishlistNotifModal .modal-content {
+    background-color: #1f1f1f;
+    color: white;
+}
+
+body.dark-mode .text-muted {
+    color: #cbd5e0 !important;
+}
+
+.hero {
+    height: 400px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/bg-hp.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+footer {
+    margin-top: 50px;
+}
+
+nav {
+    background-color: #76663b;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.navbar-toggler-icon {
+    filter: invert(100%);
+}
+
+.navbar-toggler {
+    border-color: rgba(255, 255, 255, 0.5);
+}
+.navbar-toggler:focus {
+    box-shadow: 0 0 0 0.25rem rgba(255, 255, 255, 0.25) !important;
+}
+.navbar-brand, .nav-link {
+    color: #f8f9fa !important;
+}
+
+.navbar-toggler:active,
+.navbar-toggler-icon:focus {
+    outline: none !important;
+    box-shadow: none !important;
+}
+
+.card {
+    background-color: rgba(255, 255, 255, 0.1);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    backdrop-filter: blur(5px);
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.card-title {
+    text-align: center;
+    font-weight: 700;
+    color: #ffffff;
+}
+
+.card-text {
+    text-align: center;
+    font-weight: 400;
+    color: #f8f9fa;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+.btn-primary {
+    background: linear-gradient(rgba(255, 255, 255, 0.4), rgba(255, 255, 255, 0.5)) !important;
+    border: 0px solid white !important;
+    color: white !important;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 400;
+    transition: 0.3s;
+    display: inline-block;
+}
+
+.btn-primary:hover {
+    background-color: white !important;
+    color: #2c2616 !important;
+}
+
+.daftar-armada {
+    text-align: center;
+    -webkit-text-fill-color: #f8f9fa;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    width: 100%;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 3rem !important; 
+}
+
+.tambah-armada {
+    width: 100%;
+    text-align: center;
+    -webkit-text-fill-color: #f8f9fa;
+    font-family: 'Montserrat', sans-serif;
+    padding-right: var(--bs-gutter-x, 0.75rem);
+    padding-left: var(--bs-gutter-x, 0.75rem);
+    margin-right: auto;
+    margin-left: auto;
+    margin-top: 3rem !important;
+    margin-bottom: 3rem !important;
+}
+
+footer {
+    background-color: #76663b;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.form-label {
+    color: white;
+    font-family: 'Montserrat', sans-serif;
+    font-size: 0.9rem;
+}
+
+.form-label i {
+    color: #f8f9fa;
+}
+
+.armada-gpc {
+    height: 400px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/gpc.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center; 
+    justify-content: flex-end; 
+    text-align: right; 
+}
+
+.gpc-interior{
+    height: 400px;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url("../assets/gpc-interior.jpg");
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.main-footer {
+    margin-top: 0px;
+    background-color: #76663b;
+    color: #ffffff;
+    font-family: 'Montserrat', sans-serif;
+}
+
+.footer-links li {
+    margin-bottom: 8px;
+}
+
+.footer-links a {
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 0.85rem;
+    transition: color 0.3s;
+}
+
+.footer-links a:hover {
+    color: #76663b;
+}
+
+.payment-grid {
+    display: grid;
+    grid-template-columns: repeat(5, 1fr);
+    gap: 5px;
+    max-width: 250px;
+}
+
+.payment-grid img {
+    width: 300px;
+    height: auto;
+    display: block;
+    margin-top: 10px;
+    filter: brightness(1.2);
+}
+
+.footer-bottom {
+    background-color: #76663b;
+}
+
+.office-info p {
+    font-size: 0.85rem;
+}
+
+.stok-text {
+    display: block;
+    margin-bottom: 15px;
+    font-size: 0.9rem;
+    color: #f8f9fa;
+}
+
+.btn-login {
+    background-color: rgba(255, 255, 255, 0.4);
+    color: #2c2616 !important;
+    border: 1px solid rgba(0, 0, 0, 0.1) !important; 
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 500;
+    transition: 0.3s ease;
+}
+
+.btn-login:hover {
+    background-color: rgba(255, 255, 255, 0.8) !important;
+    color: #000000 !important;
+}
+
+::placeholder {
+    color: rgba(28, 28, 28, 0.5) !important;
+    font-size: 0.9rem;
+}
