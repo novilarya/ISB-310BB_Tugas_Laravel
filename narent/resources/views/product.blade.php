@@ -73,55 +73,23 @@
     </div>
 
     <div class="daftar-armada container mt-5">
-        <div class="d-flex justify-content-between mb-3">
-            <h3 clas"mb-4">Daftar Armada</h3>
-            <a href="{{ route('products') }}" class="text=decoration-none text-white mb-3">
-                Lihat Semua Armada >>>
-            </a>
-        </div>
+        <h3 class="mb-4 fw-bold">Daftar Armada</h3>
         <div class="row">
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="assets/jb5-shdt.jpg" class="card-img-top"/>
-                    <div class="card-body">
-                        <h5 class="card-title">Grand Priority Class</h5>
-                        <p class="card-text">Mulai Dari 6.5 Mio per Hari</p>
-                        <span class="stok-text mb-3">2 Unit Ready</span> <div class="d-flex justify-content-between w-100 mb-2">
-                            <button class="btn btn-primary btn-sewa w-50 me-1">Sewa</button>
-                            <button class="btn btn-primary btn-wishlist w-50 ms-1">Wishlist</button>
+            @foreach ($products as $item)
+                <div class="col-md-4 mb-4">
+                    <div class="card h-100">
+                        <div class="card-body">
+                            <h5 class="card-title">{{ $item->product_name }}</h5>
+                            <p class="mb-1">
+                                <span class="badge bg-primary">{{ $item->brand->nama_brand }}</span>
+                                <span class="badge bg-secondary">{{ $item->category->category_name }}</span>
+                            </p>
+                            <p class="card-text text-danger">Rp {{ number_format($item->product_price, 0, ',', '.') }}</p>
+                            <p class="card-text">Stok: {{ $item->product_stock }}</p>
                         </div>
-                        <a href="{{ route('armada.grand_priority') }}" class="btn btn-primary w-100">Detail</a>
                     </div>
                 </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="assets/jb5-mhd.jpg" class="card-img-top"/>
-                    <div class="card-body">
-                        <h5 class="card-title">Priority Class</h5>
-                        <p class="card-text">Mulai Dari 4.5 Mio per Hari</p>
-                        <span class="stok-text mb-3">4 Unit Ready</span> <div class="d-flex justify-content-between w-100 mb-2">
-                            <button class="btn btn-primary btn-sewa w-50 me-1">Sewa</button>
-                            <button class="btn btn-primary btn-wishlist w-50 ms-1">Wishlist</button>
-                        </div>
-                        <a href="" class="btn btn-primary w-100">Detail</a>
-                    </div>
-                </div>
-            </div>
-            <div class="col-md-4">
-                <div class="card mb-4">
-                    <img src="assets/jb5-med.jpg" class="card-img-top"/>
-                    <div class="card-body">
-                        <h5 class="card-title">Pioneer Class</h5>
-                        <p class="card-text">Mulai Dari 3.25 Mio per Hari</p>
-                        <span class="stok-text mb-3">2 Unit Ready</span> <div class="d-flex justify-content-between w-100 mb-2">
-                            <button class="btn btn-primary btn-sewa w-50 me-1">Sewa</button>
-                            <button class="btn btn-primary btn-wishlist w-50 ms-1">Wishlist</button>
-                        </div>
-                        <a href="" class="btn btn-primary w-100">Detail</a>
-                    </div>
-                </div>
-            </div>
+            @endforeach
         </div>
     </div>
 
